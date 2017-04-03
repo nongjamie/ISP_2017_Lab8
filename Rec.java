@@ -5,11 +5,11 @@ public class Rec {
 		e.g. numDigits(0) = 1, numDigits(3) = 1, numDigits(34) = 2.
 		numDigits(1356) = 4.
 		Precondition: n >= 0. */
-//	public static int numDigits(int n) {
-//
-//		// fill me in
-//
-//	}
+	public static int numDigits(int n) {
+
+		// fill me in
+
+	}
 
 	/** = sum of the digits in the decimal representation of n.
       e.g. sumDigits(0) = 0, sumDigits(3) = 3, sumDigits(34) = 7,
@@ -50,16 +50,16 @@ public class Rec {
 	}
 
 	public static void main(String[] args) {
-//		System.out.println(numDigits(123));
-//		System.out.println(numDigits(123456));
-//		System.out.println(numDigits(1));
-//		System.out.println(numDigits(0));
-//		System.out.println("-----------------");
-//		System.out.println(sumDigits(123));
-//		System.out.println(sumDigits(123456));
-//		System.out.println(sumDigits(1));
-//		System.out.println(sumDigits(0));
-//		System.out.println("-----------------");
+		System.out.println(numDigits(123));
+		System.out.println(numDigits(123456));
+		System.out.println(numDigits(1));
+		System.out.println(numDigits(0));
+		System.out.println("-----------------");
+		System.out.println(sumDigits(123));
+		System.out.println(sumDigits(123456));
+		System.out.println(sumDigits(1));
+		System.out.println(sumDigits(0));
+		System.out.println("-----------------");
 		System.out.println( "a"+"b" );
 		System.out.println( removeChar( "aaabbbccc" , 'b') );
 		System.out.println(removeChar("eawabbcceccddeeaaeeeee", 'e'));
@@ -69,5 +69,4 @@ public class Rec {
 		System.out.println(reverse( "abbcccdeaaa" ));
 		System.out.println(reverse( "AMANAPLANACANALPANAMA" ));
 	}
-	
 }
