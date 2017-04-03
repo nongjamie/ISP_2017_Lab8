@@ -15,11 +15,17 @@ public class Rec {
       e.g. sumDigits(0) = 0, sumDigits(3) = 3, sumDigits(34) = 7,
       sumDigits(345) = 12.
       Precondition: n >= 0. */
-//	public static int sumDigits(int n) {
-//
-//		//	 fill me in
-//
-//	}
+	public static int sumDigits(int num) {
+		if( num <= 0 ) {
+			return 0;
+		}
+		else if( (num > 0) && (num < 10) ) {
+			return num;
+		}
+		else{
+			return (num%10) + sumDigits( (int)Math.floor(num/10) );
+		}
+	}
 
 	/** = a copy of s with to_remove_char removed.
 		Example: removeChar("abeabe", 'e') = "abab". */
