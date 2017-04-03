@@ -57,9 +57,15 @@ public class Rec {
 	 * reverse("abcdefg") = "gfedcba".
 	 */
 	public static String reverse(String s) {
-
-		// fill me in
-
+		if( s.length() == 0 || s.equals(null) ) {
+			return "";
+		}
+		if( s.length() > 1 ) {
+			return s.substring(s.length()-1) + reverse( s.substring(0, s.length()-1)  );
+		}
+		else {
+			return s.substring(0);
+		}
 	}
 
 	public static void main(String[] args) {
