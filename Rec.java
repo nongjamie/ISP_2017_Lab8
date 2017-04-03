@@ -7,7 +7,16 @@ public class Rec {
 		Precondition: n >= 0. */
 	public static int numDigits(int n) {
 
-		// fill me in
+		if(n < 0) {
+    		n = n * (-1);
+    	}
+    	
+    	if(n > 0) {
+    		n = n / 10;
+    		return 1+numDigits(n);
+    	} else {
+    		return 0;
+    	}
 
 	}
 
